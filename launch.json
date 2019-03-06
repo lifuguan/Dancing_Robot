@@ -1,0 +1,24 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Watson",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": false,
+            "program": "${workspaceRoot}/DBNBeatTraker.py",
+            "pythonPath": "VIRTUALENV_PATH/bin/python",
+            "exceptionHandling": {
+                "ignore": ["ImportError"]
+            },
+            "args": [
+                "online"
+            ],
+            "debugOptions": [
+                "WaitOnAbnormalExit",
+                "WaitOnNormalExit",
+                "RedirectOutput"
+            ]
+        }
+    ]
+}
